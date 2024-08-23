@@ -18,8 +18,8 @@ public class App {
 
         Optional<Student> student = bootcampExample.findStudentById(4);
         student.ifPresent((foundStudent) -> {
-            int courseId = 1;
-            bootcampExample.completeCourse(foundStudent, courseId);
+            bootcampExample.completeCourse(foundStudent, 1);
+            bootcampExample.completeCourse(foundStudent, 2);
             bootcampExample.showStudentStatus(foundStudent);
         });
 

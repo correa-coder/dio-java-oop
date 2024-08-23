@@ -8,6 +8,6 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return String.format("%d. %s (%s)", getId(), getName(), getEmail());
+        return String.format("%s (%s)", getName(), getEmail());
     }
 }
